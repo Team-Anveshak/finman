@@ -38,12 +38,13 @@ html{
     display: block;
     text-align: left;
     margin-bottom: 23px;
+    width: auto;
 }
 
 .form-mini input,
 .form-mini select{
     box-sizing: border-box;
-    width: 240px;
+    width: 100%;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     padding: 12px 18px;
     text-align:  center;
