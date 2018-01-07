@@ -1,0 +1,144 @@
+html{
+    background-color: #f3f3f3;
+}
+
+.form-mini-container{
+    max-width: 315px;
+    margin: 0 auto;
+    font: normal 14px sans-serif;
+    text-align: center;
+    color: #454545;
+}
+
+.form-mini-container h1{
+    color:  #454545;
+    font-size: 24px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 2px solid #ee682a;
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-mini{
+    box-sizing: border-box;
+    padding: 40px;
+
+    background-color:  #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-mini input:focus{
+  outline: none !important;
+  border:2px solid #ee682a;
+
+}
+
+.form-mini .form-row{
+    display: block;
+    text-align: left;
+    margin-bottom: 23px;
+}
+
+.form-mini input,
+.form-mini select{
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px 18px;
+    text-align:  center;
+    border: 1px solid #dbdbdb;
+}
+
+
+.form-mini input[type=radio],
+.form-mini input[type=checkbox]{
+    box-shadow: none;
+    width: auto;
+}
+
+.form-mini select{
+    color: inherit;
+    background-color: #ffffff;
+}
+
+.form-mini .form-checkbox span{
+    margin-left: 5px;
+}
+
+.form-mini .form-checkbox input{
+    width: auto;
+}
+
+.form-mini .form-radio-buttons > div{
+    margin-bottom: 10px;
+}
+
+.innerrad{
+  margin-left: 32px;
+  /* text-align: center; */
+}
+
+.inrad{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom:  5px;
+}
+
+.form-mini .form-radio-buttons input{
+    width: auto;
+}
+
+.passkey:focus{
+  outline:#ee682a;
+}
+
+.form-mini .form-radio-buttons label span{
+    margin-left: 8px;
+    /* padding-left:  8px; */
+    /* width:  50%; */
+}
+
+.form-mini .form-last-row{
+    margin: 35px auto 0;
+}
+
+.form-mini button{
+    display: block;
+    border-radius: 2px;
+    background-color: #ee682a;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    padding: 14px 22px;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* Placeholder color */
+
+.form-mini ::-webkit-input-placeholder {
+    color:  #999;
+}
+
+.form-mini ::-moz-placeholder {
+    color:  #999;
+    opacity: 1;
+}
+
+.form-mini :-ms-input-placeholder {
+    color:  #999;
+}
+
+/*	Making the form responsive. Remove this media query
+    if you don't need the form to work on mobile devices. */
+
+@media (max-width: 600px) {
+
+    .form-mini-container{
+        margin-top: 0;
+    }
+
+}
