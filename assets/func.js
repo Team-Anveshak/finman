@@ -38,7 +38,7 @@ function OnSubmitForm()
        }
        else
        if(rad22.checked == true){
-         document.finform.action ="phps/unbill.php";
+         document.finform.action ="phps/unbilled.php";
        }
        else
        if(rad23.checked == true){
