@@ -6,12 +6,11 @@ if(isset($_POST["bill_no"])){
 	#echo "Submitted";
 
 
-	$bill_id       =  $_POST["bill_id"];
+
     $date          =  $_POST["date"];
 	$payee         =  $_POST["payee"];
 	$paid_to       =  $_POST["paid_to"];
 	$amount        =  $_POST["amount"];
-	$bill_no       =  $_POST["bill_no"];
 	$description   =  $_POST["description"];
 	$module        =  $_POST["module"];
 	$paid_by_payee =  $_POST["paid_by_payee"];
@@ -32,7 +31,7 @@ if(isset($_POST["bill_no"])){
 
 
 
-$sql = sprintf("INSERT INTO `billed_tra` (`bill_id`, `date`, `payee`, `paid_to`, `amount`, `bill_no`,`description`,`module`,`paid_by_payee`,`signed`,`submitted`) VALUES ( '%d', '%s', '%s', '%s','%f', '%s', '%s', '%s','%d','%d','%d')" ,$bill_id,$date,$payee,$paid_to,$amount,$bill_no,$description,$module,$paid_by_payee,$signed,$submitted);
+$sql = sprintf("INSERT INTO `billed_tra` ( `date`, `payee`, `paid_to`, `amount`,`description`,`module`,`paid_by_payee`,`signed`,`submitted`) VALUES ( '%d', '%s', '%s', '%s','%f', '%s', '%s', '%s','%d','%d','%d')" ,$bill_id,$date,$payee,$paid_to,$amount,$bill_no,$description,$module,$paid_by_payee,$signed,$submitted);
 
 if ($conn->query($sql) === TRUE) {
     echo "New records created successfully <br><br><br>" ;
@@ -57,9 +56,6 @@ $conn->close();
 
 		<form action="" method="post">
 
-			Bill id : 
-			<input type="number" name="bill_id" > <br><br>
-
 
 			Date :   
 			<input type="date" name="date"/> <br><br>
@@ -72,9 +68,6 @@ $conn->close();
 
             Amount :  
             <input type="number" step="any" name="amount"/> <br><br>
-
-            Bill Number : 
-            <input type="text" name="bill_no"/> <br><br>
 
             Description :  
             <input type="text" name="description"/> <br><br>
